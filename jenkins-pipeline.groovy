@@ -8,7 +8,7 @@ node('maven') {
     }
     stage('deploy') {
         input 'Manual Approval'
-        openshiftDeploy(deploymentConfig: 'workshop-ocp')
+        openshiftDeploy(deploymentConfig: 'workshop-oc')
     }
     stage('promoting to QA') {
        echo 'fake stage...'
